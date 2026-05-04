@@ -5,7 +5,6 @@
 EcoScale is a research project addressing a gap in cloud-HPC scheduling: **optimal node count depends on the bottleneck class (compute, memory, I/O, communication), not just on throughput maximization.**
 
 This repository contains:
-- **Paper:** `EcoScale_ICICCS2026.tex` (submitted to ICICCS-2026)
 - **Code:** `code/ecoscale_energy_analysis.py` (energy measurement, decision tree, validation)
 - **Data:** Synthetic energy traces for 12 diverse AI workloads across 7 node counts
 - **Figures:** Publication-quality plots (energy scaling, power breakdown, validation comparison)
@@ -30,8 +29,6 @@ This repository contains:
 
 ```
 EcoScale_Complete_Project/
-├── EcoScale_ICICCS2026.tex          # Main paper (IEEE conference format)
-├── EcoScale_ICICCS2026.pdf          # Compiled PDF
 ├── README.md                         # This file
 ├── code/
 │   └── ecoscale_energy_analysis.py   # Main analysis pipeline
@@ -63,15 +60,6 @@ This generates:
 - `data/validation_results.csv` — Validation results (12 workloads)
 - `figs/Fig*.pdf` — Three publication-quality plots
 
-### Compile Paper
-```bash
-cd /Users/venky/Desktop/Papers/EcoScale/EcoScale_Complete_Project
-pdflatex -interaction=nonstopmode EcoScale_ICICCS2026.tex
-```
-
-This requires:
-- `pdflatex` (TeX Live or MacTeX)
-- `IEEEtran` document class (usually included in standard LaTeX installations)
 
 ## Methodology
 
@@ -154,8 +142,7 @@ Assuming AWS p4de.24xlarge ($3.06/hour) + $0.10/kWh electricity:
 All code, data, and traces are available in this repository. To reproduce:
 
 1. Run `code/ecoscale_energy_analysis.py` to regenerate measurements and figures.
-2. Compile `EcoScale_ICICCS2026.tex` to regenerate the paper.
-3. All random seeds are fixed (numpy/scikit-learn seed=42).
+2. All random seeds are fixed (numpy/scikit-learn seed=42).
 
 ## References
 
