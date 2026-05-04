@@ -144,16 +144,6 @@ All code, data, and traces are available in this repository. To reproduce:
 1. Run `code/ecoscale_energy_analysis.py` to regenerate measurements and figures.
 2. All random seeds are fixed (numpy/scikit-learn seed=42).
 
-## References
-
-Key papers cited in the work:
-
-- Strubell et al. (2019): "Energy and Policy Considerations for Deep Learning in NLP" (ACL)
-- Wang et al. (2024): "Multi-dimensional evaluation framework for distributed AI training" (ASPLOS)
-- Dean & Barroso (2013): "The Tail at Scale" (CACM)
-- Mathuriya et al. (2018): "CosmoFlow" (SC)
-- Farrell et al. (2021): "DeepCAM" (MLPerf-HPC)
-
 ## Contact
 
 **Author:** Venkateswarlu Tanneru  
